@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI-powered suggestions and modern templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Scheduler",
+    "description": "Plan, schedule, and automate posts across multiple social platforms.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Multi-platform posting", "Analytics dashboard", "Auto scheduling"],
+    "icon": "social-media.png"
+  },
+  {
+    "id": 3,
+    "name": "E-commerce Starter Kit",
+    "description": "Launch your online store with essential tools and integrations.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Payment gateway integration", "Inventory tracking", "Mobile-friendly design"],
+    "icon": "shopping-cart.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Showcase your work with stunning, customizable portfolio templates.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Drag-and-drop editor", "Custom domains", "SEO optimization"],
+    "icon": "portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "Design Toolkit",
+    "description": "Access premium design assets, icons, and UI kits for your projects.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["5000+ assets", "UI kits", "Commercial license"],
+    "icon": "design-tool.png"
+  },
+  {
+    "id": 6,
+    "name": "Operations Manager",
+    "description": "Streamline workflows and manage business operations efficiently.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Task automation", "Team collaboration", "Reporting tools"],
+    "icon": "operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Content Writing Assistant",
+    "description": "Generate high-quality content for blogs, ads, and emails using AI.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI content generation", "Grammar correction", "SEO suggestions"],
+    "icon": "writing_2327400 1.png"
+  },
+  {
+    "id": 8,
+    "name": "Advanced Analytics Suite",
+    "description": "Gain deep insights into your business performance with powerful analytics.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Real-time analytics", "Custom reports", "Data visualization"],
+    "icon": "operation.png"
+  }
+]

@@ -8,27 +8,30 @@ function Navbar({ cartCount }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-purple-700">
+          <div className="shrink-0">
+            <a
+              href="#"
+              className="text-2xl font-extrabold bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent"
+            >
               DigiTools
             </a>
           </div>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">
+            <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">
               Products
             </a>
-            <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">
+            <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">
               Features
             </a>
-            <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">
+            <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">
               Pricing
             </a>
-            <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">
+            <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">
               Testimonials
             </a>
-            <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">
+            <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">
               FAQ
             </a>
           </div>
@@ -44,12 +47,12 @@ function Navbar({ cartCount }) {
                 </span>
               )}
             </div>
-            <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">
+            <a href="#" className="text-[#101727] hover:text-purple-700 text-sm font-medium">
               Login
             </a>
             <a
               href="#"
-              className="bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-purple-800 transition"
+              className="bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Get Started
             </a>
@@ -83,13 +86,13 @@ function Navbar({ cartCount }) {
         {mobileMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-3">
-              <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">Products</a>
-              <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">Features</a>
-              <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">Pricing</a>
-              <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">Testimonials</a>
-              <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">FAQ</a>
-              <a href="#" className="text-gray-700 hover:text-purple-700 text-sm font-medium">Login</a>
-              <a href="#" className="bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-purple-800">Get Started</a>
+              <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">Products</a>
+              <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">Features</a>
+              <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">Pricing</a>
+              <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">Testimonials</a>
+              <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">FAQ</a>
+              <a href="#" className="text-[#101027] hover:text-purple-700 text-sm font-medium">Login</a>
+              <a href="#" className="bg-[linear-gradient(88deg,#4f39f6_0%,#9514fa_100%)] text-white px-4 py-2 rounded-lg text-sm font-medium text-center hover:bg-purple-800">Get Started</a>
             </div>
           </div>
         )}

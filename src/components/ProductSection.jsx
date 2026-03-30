@@ -44,27 +44,29 @@ function ProductSection({ products, cart, onAddToCart, onRemoveFromCart, onClear
                 </div>
 
                 {/* Toggle Buttons */}
-                <div className="flex justify-center gap-3 mb-10">
-                    <button
-                        onClick={() => setActiveTab('products')}
-                        className={
-                            activeTab === 'products'
-                                ? 'bg-purple-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition'
-                                : 'border border-gray-300 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition'
-                        }
-                    >
-                        Products
-                    </button>
-                    <button
-                        onClick={() => setActiveTab('cart')}
-                        className={
-                            activeTab === 'cart'
-                                ? 'bg-purple-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition'
-                                : 'border border-gray-300 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition'
-                        }
-                    >
-                        Cart ({cart.length})
-                    </button>
+                <div className="flex justify-center mb-10">
+                    <div className="inline-flex items-center bg-[#f6f6f6] rounded-full p-1">
+                        <button
+                            onClick={() => setActiveTab('products')}
+                            className={
+                                activeTab === 'products'
+                                    ? 'bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white px-6 py-2.5 rounded-full text-sm font-medium transition'
+                                    : 'text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:text-purple-700 transition'
+                            }
+                        >
+                            Products
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('cart')}
+                            className={
+                                activeTab === 'cart'
+                                    ? 'bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white px-6 py-2.5 rounded-full text-sm font-medium transition'
+                                    : 'text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:text-purple-700 transition'
+                            }
+                        >
+                            Cart ({cart.length})
+                        </button>
+                    </div>
                 </div>
 
                 {/* Products Grid */}
@@ -121,7 +123,7 @@ function ProductSection({ products, cart, onAddToCart, onRemoveFromCart, onClear
                                 {/* Buy Now Button */}
                                 <button
                                     onClick={() => onAddToCart(product)}
-                                    className="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white py-2.5 rounded-lg text-sm font-medium hover:from-purple-700 hover:to-pink-600 transition"
+                                    className="w-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white py-2.5 rounded-full text-sm font-medium hover:from-purple-700 hover:to-pink-600 transition"
                                 >
                                     Buy Now
                                 </button>
@@ -132,14 +134,13 @@ function ProductSection({ products, cart, onAddToCart, onRemoveFromCart, onClear
 
                 {/* Cart Section */}
                 {activeTab === 'cart' && (
-                    <div className="max-w-3xl mx-auto border border-gray-200 rounded-2xl p-6 md:p-8">
+                    <div className="max-w-3.5xl mx-auto border border-gray-200 rounded-2xl p-6 md:p-8">
                         <h3 className="text-xl font-bold text-gray-900 mb-6">Your Cart</h3>
 
                         {cart.length === 0 ? (
                             <div className="text-center py-12">
                                 <i className="fa-solid fa-cart-shopping text-gray-300 text-5xl mb-4"></i>
                                 <p className="text-gray-400 text-lg">Your cart is empty</p>
-                                <p className="text-gray-400 text-sm mt-1">Add some products to get started!</p>
                             </div>
                         ) : (
                             <>
@@ -181,7 +182,7 @@ function ProductSection({ products, cart, onAddToCart, onRemoveFromCart, onClear
                                 {/* Checkout Button */}
                                 <button
                                     onClick={onClearCart}
-                                    className="w-full mt-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white py-3 rounded-full text-sm font-medium hover:from-purple-700 hover:to-pink-600 transition"
+                                    className="w-full mt-6 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white py-3 rounded-full text-sm font-medium hover:from-purple-700 hover:to-pink-600 transition"
                                 >
                                     Proceed To Checkout
                                 </button>

@@ -42,7 +42,7 @@ function Navbar({ cartCount }) {
             <div className="relative">
               <i className="fa-solid fa-cart-shopping text-gray-700 text-lg"></i>
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-3 bg-purple-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-3 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {cartCount}
                 </span>
               )}

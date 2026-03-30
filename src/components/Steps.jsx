@@ -45,12 +45,12 @@ function Steps() {
               className="bg-white rounded-2xl p-8 text-center relative border border-gray-100 hover:shadow-lg transition"
             >
               {/* Step Number Badge */}
-              <span className="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">
+              <span className="absolute top-4 right-4 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">
                 {step.number}
               </span>
 
               {/* Icon */}
-              <div className="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mx-auto mb-5">
                 <img src={step.icon} alt={step.title} className="w-8 h-8 object-contain" />
               </div>
 

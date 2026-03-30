@@ -12,7 +12,7 @@ function Pricing() {
                 '1 project per month',
             ],
             buttonText: 'Get Started Free',
-            buttonStyle: 'border border-purple-600 text-purple-600 hover:bg-purple-50',
+            buttonStyle: 'text-white',
             highlighted: false,
         },
         {
@@ -29,7 +29,7 @@ function Pricing() {
                 'Advanced analytics',
             ],
             buttonText: 'Start Pro Trial',
-            buttonStyle: 'border border-purple-600 text-purple-600 hover:bg-purple-50',
+            buttonStyle: 'bg-white text-purple-700 hover:bg-gray-100',
             highlighted: true,
             badge: 'Most Popular',
         },
@@ -47,7 +47,7 @@ function Pricing() {
                 'Custom branding',
             ],
             buttonText: 'Contact Sales',
-            buttonStyle: 'bg-purple-700 text-white hover:bg-purple-800',
+            buttonStyle: 'text-white',
             highlighted: false,
         },
     ];
@@ -73,32 +73,46 @@ function Pricing() {
                             className={
                                 'rounded-2xl p-8 relative ' +
                                 (plan.highlighted
-                                    ? 'border-2 border-purple-600 shadow-lg'
+                                    ? 'shadow-lg text-white'
                                     : 'border border-gray-200')
                             }
+                            style={plan.highlighted ? { background: 'linear-gradient(88deg, #4f39f6 0%, #9514fa 100%)' } : {}}
                         >
                             {/* Badge */}
                             {plan.badge && (
-                                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-medium px-4 py-1 rounded-full">
+                                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-100 text-yellow-700 text-xs font-medium px-4 py-1 rounded-full">
                                     {plan.badge}
                                 </span>
                             )}
 
                             {/* Plan Name */}
-                            <h3 className="text-xl font-bold text-gray-900">{plan.name}</h3>
-                            <p className="text-gray-500 text-sm mt-1 mb-6">{plan.subtitle}</p>
+                            <h3 className={plan.highlighted ? 'text-xl font-bold text-white' : 'text-xl font-bold text-gray-900'}>
+                                {plan.name}
+                            </h3>
+                            <p className={plan.highlighted ? 'text-sm mt-1 mb-6 text-purple-100' : 'text-gray-500 text-sm mt-1 mb-6'}>
+                                {plan.subtitle}
+                            </p>
 
                             {/* Price */}
                             <div className="mb-6">
-                                <span className="text-4xl font-bold text-gray-900">${plan.price}</span>
-                                <span className="text-gray-400 text-sm">/{plan.period}</span>
+                                <span className={plan.highlighted ? 'text-4xl font-bold text-white' : 'text-4xl font-bold text-gray-900'}>
+                                    ${plan.price}
+                                </span>
+                                <span className={plan.highlighted ? 'text-sm text-purple-200' : 'text-gray-400 text-sm'}>
+                                    /{plan.period}
+                                </span>
                             </div>
 
                             {/* Features */}
                             <ul className="space-y-3 mb-8">
                                 {plan.features.map((feature, idx) => (
-                                    <li key={idx} className="flex items-center text-sm text-gray-600">
-                                        <i className="fa-solid fa-check text-purple-600 mr-2 text-xs"></i>
+                                    <li
+                                        key={idx}
+                                        className={plan.highlighted ? 'flex items-center text-sm text-white' : 'flex items-center text-sm text-gray-600'}
+                                    >
+                                        <i
+                                            className={plan.highlighted ? 'fa-solid fa-check mr-2 text-xs text-white' : 'fa-solid fa-check text-purple-600 mr-2 text-xs'}
+                                        ></i>
                                         {feature}
                                     </li>
                                 ))}
@@ -107,8 +121,9 @@ function Pricing() {
                             {/* Button */}
                             <button
                                 className={
-                                    'w-full py-3 rounded-lg text-sm font-medium transition ' + plan.buttonStyle
+                                    'w-full py-3 rounded-full text-sm font-medium transition ' + plan.buttonStyle
                                 }
+                                style={!plan.highlighted ? { background: 'linear-gradient(88deg, #4f39f6 0%, #9514fa 100%)' } : {}}
                             >
                                 {plan.buttonText}
                             </button>

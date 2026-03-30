@@ -16,9 +16,9 @@ function Banner() {
             </h1>
             <p className="text-gray-600 text-base md:text-lg max-w-lg">
               Access premium AI tools, design assets, templates, and productivity
-              software--all in one place. Start creating faster today.
+              software--all in one place. Start creating faster today.<br /><p>Explore Products</p>  
             </p>
-            <p className="text-gray-500 text-sm">Explore Products</p>
+            {/* <p className="text-gray-500 text-sm">Explore Products</p> */}
             <div className="flex flex-wrap gap-4">
               <a
                 href="#products"
@@ -30,9 +30,7 @@ function Banner() {
                 href="#"
                 className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg text-sm font-medium hover:bg-gray-100 transition flex items-center gap-2"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
+                <i className="fa-solid fa-play text-xs"></i>
                 Watch Demo
               </a>
             </div>
